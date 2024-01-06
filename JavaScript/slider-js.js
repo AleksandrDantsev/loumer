@@ -1,4 +1,4 @@
-"use srtict";
+﻿"use srtict";
 //Ширина блоков в слайдере;
 const lineSliderVisible = document.querySelector('.slider__line-visible');
 const widthElems = document.querySelectorAll('.element-img');
@@ -39,7 +39,7 @@ sliderChoise.onclick = function(event) {
 sliderChoise.addEventListener('click', widthElem);
 
 
-(function widthElem() {
+function widthElem() {
 	(widthWindow < 680) ? numberOfSliders = 2 : '';
 	(widthWindow < 430) ? numberOfSliders = 1 : '';
 	const marginElem = getComputedStyle(widthElems[0]).marginRight;
@@ -48,7 +48,9 @@ sliderChoise.addEventListener('click', widthElem);
 		widthElems[i].style.width = `${sliderWrapHidden / numberOfSliders - parseInt(marginElem)}px`;
 	}
 	returnPosition();
-})();
+};
+
+widthElem();
 
 //Подключение кнопок слайдера;
 

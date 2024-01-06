@@ -4,7 +4,7 @@ const nightBlock = document.querySelector('.night-day');
 const nightActiveButton = document.querySelector('.night')
 const basketColorNight = document.querySelector('.count-basket').firstElementChild;
 const idSvg = document.getElementById('surface865280');
-const body = document.querySelector('body');
+const bodyMain = document.querySelector('body');
 
 document.querySelector('.night').firstElementChild.style.fill = '#ACACAC';
 
